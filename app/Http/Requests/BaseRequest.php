@@ -15,13 +15,4 @@ abstract class BaseRequest extends FormRequest
     {
         return true;
     }
-
-    /**
-     * @return string
-     */
-    protected function getRedirectUrl(): string
-    {
-        $url = $this->redirector->getUrlGenerator();
-        return $url->previous();
-    }
 }

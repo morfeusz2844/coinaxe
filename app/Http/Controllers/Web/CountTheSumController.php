@@ -1,22 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Web;
 
+use App\Http\Controllers\Common\BaseCountTheSumController;
 use App\Http\Requests\CountTheSumRequest;
-use App\Services\CountTheSumService;
 use Illuminate\Http\RedirectResponse;
 
-class CountTheSumController extends Controller
+class CountTheSumController extends BaseCountTheSumController
 {
-    private CountTheSumService $countTheSumService;
 
-    /**
-     * @param CountTheSumService $countTheSumService
-     */
-    public function __construct(CountTheSumService $countTheSumService)
-    {
-        $this->countTheSumService = $countTheSumService;
-    }
 
     /**
      * @param CountTheSumRequest $request

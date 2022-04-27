@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\CountTheSumController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\TextConcatController;
+use App\Http\Controllers\Web\CountTheSumController;
+use App\Http\Controllers\Web\HomeController;
+use App\Http\Controllers\Web\TextConcatController;
 use Illuminate\Support\Facades\Route;
 
 /*
